@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://kit.fontawesome.com/d3fa52357f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class='p-3 flex bg-white justify-between items-center '>
@@ -24,9 +26,10 @@
         </div>
         <div class="flex-1 hidden lg:flex justify-end">
 
-            <button class="gap-1 items-center border border-1 border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
+            <button
+                class="gap-1 items-center border border-1 border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
                 <i class="fa-brands fa-slack"></i>
-                <span>Electron Developers</span> 
+                <span>Electron Developers</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
@@ -52,27 +55,31 @@
                 <a href="#" class="block font-medium m-3 p-3 hover:bg-gray-200 rounded-lg">Blogs</a>
                 <a href="#" class="block font-medium m-3 p-3 hover:bg-gray-200 rounded-lg">Login</a>
             </div>
-            
+
             <div class="h-[1px] bg-gray-300"></div>
 
-            <button class="mt-6 flex w-full gap-1 items-center hover:bg-gray-200 px-6 py-3   rounded-lg hover:border-gray-600 ">
+            <button
+                class="mt-6 flex w-full gap-1 items-center hover:bg-gray-200 px-6 py-3   rounded-lg hover:border-gray-600 ">
                 <i class="fa-brands fa-slack"></i>
-                <span>Electron Developers</span> 
+                <span>Electron Developers</span>
             </button>
         </div>
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="overflow-hidden">
         <!-- Hero section -->
 
-        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50">
+        <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50">
             <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col sm:items-center sm:text-center">
-                
-                <div id="version-text" class="mt-12 cursor-pointer flex gap-2 my-6 items-center border border-yellow-300 bg-yellow-50 rounded-lg py-1 px-3 w-fit shadow-medium hover:shadow-lg hover:-translate-y-1 transition group">
+
+                <div id="version-text"
+                    class="mt-12 cursor-pointer flex items-center gap-2 my-6  border border-yellow-300 bg-yellow-50 rounded-lg py-1 px-3 w-fit shadow-medium hover:shadow-lg hover:-translate-y-1 transition group">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
-                    <p class="text-yellow-600">v0.21.1: <span class="text-yellow-800 font-medium">Find-in-page bug fixes</span></p>
-                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+                    <p class="text-yellow-600">v0.21.1: <span class="text-yellow-800 font-medium">Find-in-page bug
+                            fixes</span></p>
+                    <i
+                        class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
                 </div>
 
                 <div class="hidden sm:flex gap-8 mt-4 items-center text-gray-500">
@@ -88,26 +95,316 @@
                         <i class="fa fa-laptop" aria-hidden="true"></i>
                         <span>Windows, Max, Linux</span>
                     </div>
-                    
+
                 </div>
 
                 <div class="mt-8 flex flex-col gap-8 items-center">
                     <h1 class="text-4xl font-medium sm:text-7xl">Web app to desktop app in minutes</h1>
-                    <p class="text-justify sm:text-xl sm:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sint id reiciendis debitis voluptatem unde deleniti obcaecati natus dolorem</p>
+                    <p class="text-justify sm:text-xl sm:text-center">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Cumque sint id reiciendis debitis voluptatem unde deleniti obcaecati natus
+                        dolorem</p>
                     <div id="button-container" class="flex w-full flex-col gap-3 sm:flex-row mt-8 sm:w-fit">
-                        <button class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-opacity-90">Download now</button>
-                        <button class="bg-white border border-gray-300 px-4 py-2 rounded-md hover:bg-opacity-90">Read Docs</button>
+                        <button class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-opacity-90">Download
+                            now</button>
+                        <button class="bg-white border border-gray-300 px-4 py-2 rounded-md hover:bg-opacity-90">Read
+                            Docs</button>
                     </div>
                 </div>
             </div>
+            <div id="companies-container" class="flex flex-col gap-8">
+
+                <div id="companies-title" class="flex justify-center items-center gap-4 text-gray-500">
+                    <i class="fa-solid fa-arrow-turn-down transform scale-x-[-1] translate-y-2"></i>
+                    <span>APPS POWERED BY TODESKTOP</span>
+                    <i class="fa-solid fa-arrow-turn-down translate-y-2"></i>
+                </div>
+
+                <div id="companies-line-group" class=" flex flex-col gap-4">
+                    <!-- line 1 starts -->
+                    <div id="line1" class="flex gap-4 w-screen -translate-x-48">
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Facebook</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Instagram</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536661.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Telegram</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536559.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Pinterest</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/11515/11515930.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Snapchat</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>X</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3938/3938039.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Viber</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Whatsapp</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Tik Tok</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2111/2111370.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Discord</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/12105/12105339.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Threads</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Linkedin</span>
+                        </div>
+
+                    </div>
+                    <!-- line 2 starts -->
+                    <div id="line2" class="flex gap-4 w-screen -translate-x-36">
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/14090/14090273.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Unbounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4545/4545369.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Atomic</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/17235/17235206.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>I Mail</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536534.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Skype</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4423/4423709.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Zoom</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968552.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Meet</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/906/906349.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Teams</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968890.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Edge</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3669/3669986.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Spotify</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/889/889648.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Sticky notes</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Github</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733581.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Vimeo</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733546.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Envato</span>
+                        </div>
+
+
+                    </div>
+                    <!-- line 3 starts -->
+                    <div id="line3" class="md:hidden flex gap-4 w-screen -translate-x-48">
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733586.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Wordpress</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733568.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Reddit</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733559.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Kickstart</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733555.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Hangouts</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733564.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Path</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733537.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Lastfm</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733539.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Blogger</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733551.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Forrst</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center min-w-24 min-h-24 bg-white border border-gray-300 rounded-md md:min-h-32 md:min-w-32">
+                            <img src="https://cdn-icons-png.flaticon.com/128/733/733542.png" alt="logo"
+                                class="w-12 h-12 md:w-16 md:h-16">
+                            <span>Digg</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+        <div class="h-[10000px]"></div>
+
+
+
     </main>
 
     <script>
-        function handleMenu(){
+        function handleMenu() {
             const navDialog = document.getElementById('nav-dialog');
             navDialog.classList.toggle('hidden');
         }
+
+        const initialTranslateLTR = -48 * 4;
+        const initialTranslateRTL = 36 * 4;
+
+
+        function setUpIntersectionObserver(element, isLTR, speed) {
+            const intersectionCallback = (entries) => {
+                const isIntersecting = entries[0].isIntersecting;
+                if (isIntersecting) {
+                    document.addEventListener('scroll', scrollHandler);
+                }
+                else {
+                    document.removeEventListener('scroll', scrollHandler);
+                }
+            }
+
+            const intersectionObserver = new IntersectionObserver(intersectionCallback)
+            intersectionObserver.observe(element);
+
+            function scrollHandler() {
+                const translateX = (window.innerHeight - element.getBoundingClientRect().top) * speed;
+
+                let totalTranslate = 0;
+                if (isLTR) {
+                    totalTranslate = translateX + initialTranslateLTR;
+                } else {
+                    totalTranslate = -(translateX + initialTranslateRTL);
+                }
+
+                element.style.transform = `translateX(${totalTranslate}px)`;
+            }
+
+        }
+
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+        const line3 = document.getElementById('line3');
+
+        setUpIntersectionObserver(line1, true, 0.15);
+        setUpIntersectionObserver(line2, false, 0.15);
+        setUpIntersectionObserver(line3, true, 0.15);
+
     </script>
 </body>
+
 </html>
